@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --YELLOWCOLOR:#ffc54D;
+    --REDCOLOR:Crimson;
+    --GREENCOLOR:#538F90;
+    --WHITECOLOR:whitesmoke;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url('../image/spice.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--WHITECOLOR);
+}
+
+header a{
+    text-decoration: none;
+    color: var(--YELLOWCOLOR);
+    min-width: 120px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--GREENCOLOR);
+}
+
+header h2 i,nav a i{
+    margin-right: 0.5em;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;   
+}
+
+.tagline1{
+    color: var(--REDCOLOR);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color: var(--YELLOWCOLOR);
+}
+
+.maintext div{
+    margin-top: 0.75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 0.7em;
+    background-color: var(--GREENCOLOR);
+    color: var(--WHITECOLOR);
+    border: 1px solid var(--GREENCOLOR);
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--WHITECOLOR);
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5em;
+    color: var(--REDCOLOR);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: var(--GREENCOLOR);
+    font-size: 1.8em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row: span 2;
+}
+
+.locations{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
+    color: var(--WHITECOLOR);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: var(--GREENCOLOR);
+    margin-bottom: 0.8em;
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+
+footer{
+    background-color: rgb(55, 55, 55);
+    color: var(--WHITECOLOR);
+    padding: 0.25em 1em;
+}
